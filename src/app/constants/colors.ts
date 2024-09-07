@@ -82,3 +82,11 @@ export const DARK_THEME_COLORS = {
   darkGray: '#E5E5E5',
   iosSystemGreyBg: LIGHT_THEME_COLORS.dark200,
 };
+
+const THEME = {
+  common: commonColors,
+  dark: DARK_THEME_COLORS,
+  light: LIGHT_THEME_COLORS,
+};
+
+export default THEME;
