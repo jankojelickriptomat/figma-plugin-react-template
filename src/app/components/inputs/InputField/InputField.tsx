@@ -7,7 +7,7 @@ import BodyMedium from '../../typography/BodyMedium/BodyMedium';
 const InputField = ({ title, placeholder, onChange, value }: Props) => {
   return (
     <Box>
-      <BodyMedium text={title} style={{ top: 10 }} />
+      <BodyMedium text={title} style={{ top: 5 }} />
       <Input
         onChange={(e) => {
           onChange(e.target.value);
@@ -18,8 +18,8 @@ const InputField = ({ title, placeholder, onChange, value }: Props) => {
         borderColor={LIGHT_THEME_COLORS.neutral200}
         borderRadius={BORDER_RADIUS}
         backgroundColor={LIGHT_THEME_COLORS.white}
-        height={40}
-        width={200}
+        height={12}
+        width={300}
         focusBorderColor={'common.mainPurple200'}
         style={{ bottom: 15 }}
       />

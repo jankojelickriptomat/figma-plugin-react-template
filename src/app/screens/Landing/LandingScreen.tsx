@@ -31,7 +31,7 @@ function LandingScreen() {
           navigate('/components');
         }}
       />
-      <Cta title="Web app" />
+      <Cta title="Web app" onClick={() => {}} />
       <Cta title="Test message" onClick={sendTestMessage} />
     </Box>
   );
