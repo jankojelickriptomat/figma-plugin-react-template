@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../assets/logo.svg';
 import '../../styles/ui.css';
 import Cta from '../../components/buttons/Cta';
 
@@ -32,7 +31,7 @@ function LandingScreen() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <Cta title="Mobile app" />
+      <Cta title="Mobile app" onClick={() => {}} />
       <Cta title="Web app" />
     </div>
   );
