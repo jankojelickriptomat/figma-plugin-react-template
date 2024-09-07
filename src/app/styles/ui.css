@@ -2,8 +2,8 @@
 
 body {
   font: 12px sans-serif;
-  margin: 20px;
   font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
   width: 500px;
+  min-height: 500px;
 }

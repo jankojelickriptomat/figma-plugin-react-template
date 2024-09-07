@@ -15,6 +15,12 @@ const ComponentsScreen = () => {
           navigate('/components/new');
         }}
       />
+      <Cta
+        title="Library"
+        onClick={() => {
+          navigate('/components/new');
+        }}
+      />
     </div>
   );
 };
