@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
-import '../styles/ui.css';
+import logo from '../../assets/logo.svg';
+import '../../styles/ui.css';
 
-function App() {
+function LandingScreen() {
   const textbox = React.useRef<HTMLInputElement>(undefined);
 
   const countRef = React.useCallback((element: HTMLInputElement) => {
@@ -34,7 +34,7 @@ function App() {
       <img src={logo} />
       <h2>Rectangle Creator</h2>
       <p>
-        Count: <input ref={countRef} />
+        Count: nakon <input ref={countRef} />
       </p>
       <button id="create" onClick={onCreate}>
         Create
@@ -44,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingScreen;
