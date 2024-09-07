@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
 import '../../styles/ui.css';
+import Cta from '../../components/buttons/Cta';
 
 function LandingScreen() {
   const textbox = React.useRef<HTMLInputElement>(undefined);
@@ -31,15 +32,8 @@ function LandingScreen() {
 
   return (
     <div>
-      <img src={logo} />
-      <h2>Rectangle Creator</h2>
-      <p>
-        Count: nakon <input ref={countRef} />
-      </p>
-      <button id="create" onClick={onCreate}>
-        Create
-      </button>
-      <button onClick={onCancel}>Cancel</button>
+      <Cta title="Mobile app" />
+      <Cta title="Web app" />
     </div>
   );
 }
