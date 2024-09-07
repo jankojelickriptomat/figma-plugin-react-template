@@ -31,7 +31,7 @@ function LandingScreen() {
   }, []);
 
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
       <Cta title="Mobile app" />
       <Cta title="Web app" />
     </div>
