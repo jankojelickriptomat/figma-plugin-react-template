@@ -26,12 +26,11 @@ function LandingScreen() {
   return (
     <Box style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Cta
-        title="Mobile app"
+        title="Add code for component"
         onClick={() => {
           navigate('/components');
         }}
       />
-      <Cta title="Web app" onClick={() => {}} />
       <Cta title="Test message" onClick={sendTestMessage} />
     </Box>
   );

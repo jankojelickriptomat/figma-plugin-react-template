@@ -2,9 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import LandingScreen from './screens/Landing';
-import ComponentsScreen from './screens/Components';
+import ComponentsScreen from './screens/AddCode';
 import { LIGHT_THEME_COLORS } from './constants/colors';
-import NewComponentScreen from './screens/Components/New';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from './constants/theme';
 
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
             <Routes>
               <Route path="/" element={<LandingScreen />} />
               <Route path="/components" element={<ComponentsScreen />} />
-              <Route path="/components/new" element={<NewComponentScreen />} />
               <Route path="/components/:id" element={<></>} />
             </Routes>
           </ChakraProvider>

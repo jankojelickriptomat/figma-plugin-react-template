@@ -23,7 +23,9 @@ const Cta = ({ title, onClick, disabled }: Props) => {
       cursor="pointer"
       marginTop={20}
       marginBottom={20}
-      width={220}
+      maxWidth={260}
+      paddingRight={10}
+      paddingLeft={10}
     >
       <h3>{title}</h3>
     </Button>

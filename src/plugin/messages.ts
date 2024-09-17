@@ -7,4 +7,9 @@ export interface MessageMap {
   'create-rectangles': {
     count: number;
   };
+  'update-component': {
+    id: string;
+    name: string;
+    props: {};
+  };
 }

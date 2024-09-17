@@ -7,10 +7,10 @@ import BodyMedium from '../../typography/BodyMedium/BodyMedium';
 const InputField = ({ title, placeholder, onChange, value }: Props) => {
   return (
     <Box>
-      <BodyMedium text={title} style={{ top: 5 }} />
+      <BodyMedium text={title} style={{ lineHeight: 3 }} />
       <Input
         onChange={(e) => {
-          onChange(e.target.value);
+          if (onChange) onChange(e.target.value);
         }}
         value={value}
         placeholder={placeholder}
@@ -31,7 +31,7 @@ export default InputField;
 
 interface Props {
   title: string;
-  onChange: (txt: string) => void;
+  onChange?: (txt: string) => void;
   placeholder?: string;
   value: string;
 }
